@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import Form from "../components/Form";
-import DataDisplay from "../components/DataDisplay";
+import CharDisplay from "../components/CharDisplay";
 
 export default function Characters() {
   const apiKey = process.env.REACT_APP_API_KEY;
   const hashKey = process.env.REACT_APP_HASH_KEY;
   //   const url = ""; may need to keep url in var
-  const [characters, setCharacters] = useState(null);
+  const [characters, setCharacters] = useState([]);
   const getChar = async (searchTerm) => {
     try {
       if (!searchTerm) {
@@ -20,8 +20,8 @@ export default function Characters() {
       //parse json response into js obj
       const data = await response.json();
 
-      //set the issue state to the issue//
-      setCharacters(data);
+      //set the data to characters state //
+      setCharacters(data.data.results);
       console.log(characters);
     } catch (e) {
       console.error(e);
@@ -36,7 +36,7 @@ export default function Characters() {
     <div>
       <h1>Search Characters</h1>
       <Form datasearch={getChar} />
-      <DataDisplay charSearch={characters} />
+      <CharDisplay charSearch={characters} />
     </div>
   );
 }

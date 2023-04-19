@@ -1,7 +1,13 @@
+import BlogEntry from "../components/BlogEntry";
+import Data from "../data";
+import { useState } from "react";
+
 export default function Blog() {
+  const [data, setData] = useState(Data);
+
   return (
     <div>
-      <h1>This is the blog page</h1>
+      <BlogEntry data={data} setter={setData} />
     </div>
   );
 }

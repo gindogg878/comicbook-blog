@@ -6,7 +6,7 @@ export default function Issues() {
   const apiKey = process.env.REACT_APP_API_KEY;
   const hashKey = process.env.REACT_APP_HASH_KEY;
   //   const url = ""; may need to keep url in var
-  const [issue, setIssue] = useState(null);
+  const [issue, setIssue] = useState([]);
   const getIssue = async (searchTerm) => {
     try {
       if (!searchTerm) {
@@ -21,7 +21,8 @@ export default function Issues() {
       const data = await response.json();
 
       //set the issue state to the issue//
-      setIssue(data);
+      setIssue(data.data.results);
+      console.log(issue);
     } catch (e) {
       console.error(e);
     }

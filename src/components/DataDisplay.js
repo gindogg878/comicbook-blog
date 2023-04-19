@@ -2,10 +2,18 @@ export default function DataDisplay({ issue }) {
   const loaded = () => {
     return (
       <>
-        <h1>{issue.data.title}</h1>
-        <img src="issue.cover" alt="issue.title" />
-        <h1>issue.year</h1>
-        <h1>issue.writer</h1>
+        {issue.map((issue) => {
+          return (
+            <div>
+              <img
+                src={`${issue.thumbnail.path}.${issue.thumbnail.extension}`}
+                alt="hero"
+              />
+              <h1>{issue.title}</h1>
+              <p></p>
+            </div>
+          );
+        })}
       </>
     );
   };
