@@ -10,7 +10,7 @@ export default function DataDisplay({ issue }) {
                 alt="hero"
               />
               <h1>{issue.title}</h1>
-              <p></p>
+              <p>{issue.urls.url}</p>
             </div>
           );
         })}

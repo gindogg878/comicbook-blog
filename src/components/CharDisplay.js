@@ -1,12 +1,16 @@
-export default function CharDisplay({ characters }) {
+export default function CharDisplay(props) {
   const loaded = () => {
-    console.log(characters);
     return (
       <>
-        {characters.map((character) => {
+        {props.charSearch.map((character) => {
           return (
             <div key={character.id}>
-              <h1>character.name</h1>
+              <img
+                src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+                alt={character.name}
+              />
+              <h1>{character.name}</h1>
+              <p>{character.description}</p>
             </div>
           );
         })}
@@ -14,8 +18,7 @@ export default function CharDisplay({ characters }) {
     );
   };
   const loading = () => {
-    return <h1>No data info available</h1>;
+    return <h1> No data info available </h1>;
   };
-
-  return characters ? loaded() : loading();
+  return props.charSearch ? loaded() : loading();
 }

@@ -15,7 +15,7 @@ export default function Form(props) {
   const handleSubmit = (event) => {
     //prevent page from refreshing on form submission
     event.preventDefault();
-    //pass the search term to moviesearch prop, which is apps getMovie function
+    //pass the search term to datasearch prop, which is from both the issue comp and characters comp get function
     props.datasearch(formData.searchTerm);
   };
 
