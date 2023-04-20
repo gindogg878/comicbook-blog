@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: x-large;
+  margin: 25px;
+  padding: 30px;
+
+  background-color: #ec1d24;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.blogpost {
+  width: auto;
+  height: 10%;
+}
+
+.blogpost img {
+  width: 50%;
+}

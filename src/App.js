@@ -4,7 +4,6 @@ import commentReducer from "./reducer/commentReducer";
 import "./App.css";
 import Nav from "./components/Nav";
 import Blog from "./pages/Blog";
-import Landing from "./pages/Landing";
 import Issues from "./pages/Issues";
 import Characters from "./pages/Characters";
 import About from "./pages/About";
@@ -28,10 +27,9 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/" element={<Landing />} />
         <Route
-          path="/blog"
-          element={<Blog comments={commentState} dispatch={dispatch} />}
+          path="/"
+          element={<Blog commentState={commentState} dispatch={dispatch} />}
         />
         <Route path="/issues/" element={<Issues />} />
         <Route path="/characters/" element={<Characters />} />
