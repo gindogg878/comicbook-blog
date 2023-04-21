@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Gino's ComicBook Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is webpage that holds my blog posts of specific Marvel story arcs. Users will have the ability to add their comments to any of the blog post I upload. It also has links to access issues by title as well as search for their favorite comic book character.
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+I had to create a Marvel developer account to get a public and private api key so that I could acces the free api Marvel offers. It does have a limit of 3000 calls in a 24 hour period. Also not all the data is available, in my case comic book issues were limited to 20 items. I also used Bing's AI generator to create my background image as well as the selfie in the About page.
 
-### `npm start`
+## Approach
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I wanted to stick with the topics that I felt most comfortable with (Hooks). I started out with my wireframing and made sure I knew what pages and components I needed. As well as making sure I knew what my Routes and Links were going to be. I refered to all of the homework assignments as templates for what I applied to the React project. I tried to make it as user friendly as possible and make it intuitive for any user who loves comics.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+If you desire to fork and clone this project just use the gitHub instructions. You will need to have your own Marvel developer api key as well as a hash key that you can create yourself. Marvel does not provide this hash key. The only dependecies I added was the react-router-dom to use the Routes and Link hooks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here is a link to my live webpage
+[Github pages live link](https://gindogg878.github.io/comicbook-blog/)
+[Netlify link]()
 
-### `npm run build`
+## Unresolved Issues
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- I attempted to make the blog post interactive by having users create, edit, delete, comments to any specific blog post. The button to add a comment is unresponsive.
+- I wanted to have the synopsis of each of the comic book issue available and displayed along side each issue but was unsuccesful retrieving the data from the api call.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future Goals
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add a login functionality so users can post comments with a username assigned to the posts.
+- Ability to store the post and comments in a local storage
+- Add more data to the Issue page and Character page from the api.
