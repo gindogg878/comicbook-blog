@@ -1,7 +1,9 @@
+import "../style.css";
+
 export default function CharDisplay(props) {
   const loaded = () => {
     return (
-      <>
+      <div className="bios">
         {props.charSearch.map((character) => {
           return (
             <div key={character.id}>
@@ -14,7 +16,7 @@ export default function CharDisplay(props) {
             </div>
           );
         })}
-      </>
+      </div>
     );
   };
   const loading = () => {

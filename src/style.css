@@ -3,9 +3,27 @@
   box-sizing: border-box;
 }
 
-.App {
+@font-face {
+  font-family: SuperComic-Regular;
+  src: url("/public/super_comic_2/SuperComic-Regular.ttf");
 }
 
+@font-face {
+  font-family: ComickBook_Simple;
+  src: url("/public/comickbook/ComickBook_Simple.ttf");
+}
+
+body {
+  background-image: url("https://th.bing.com/th/id/OIG.RVcuTVvPxoFPGWN660RT?pid=ImgGn");
+
+  background-size: 100%;
+
+  font-family: "SuperComic-Regular", sans-serif;
+}
+
+body p {
+  font-family: "ComickBook_Simple";
+}
 .nav {
   display: flex;
   justify-content: space-evenly;
@@ -18,14 +36,127 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(242, 237, 237);
+}
+
+a:hover {
+  transform: scale(1.3);
 }
 
 .blogpost {
   width: auto;
   height: 10%;
+
+  margin: 10px;
 }
 
 .blogpost img {
   width: 50%;
+  margin: 15px;
+}
+
+.blogpost p {
+  border: 4px solid rgb(78, 178, 240);
+  border-radius: 10px;
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
+  color: rgb(242, 237, 237);
+}
+
+.blogpost h4 {
+  color: rgb(242, 237, 237);
+}
+
+.issues {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.issues div {
+  margin: 25px;
+}
+
+.issues h1 {
+  color: rgb(242, 237, 237);
+}
+
+.issue-pg h1 {
+  padding: 5% 5%;
+}
+
+.char-pg h1 {
+  padding: 5% 5%;
+}
+
+.bios {
+  margin-top: 2%;
+}
+
+.bios,
+h1 {
+  color: rgb(242, 237, 237);
+}
+
+.bios p {
+  margin-bottom: 5%;
+}
+
+.about {
+  color: rgb(242, 237, 237);
+}
+.about h1 {
+  color: rgb(233, 244, 79);
+  margin-bottom: 3%;
+}
+
+.about-para {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.selfie {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  float: right;
+  /* padding: 0 0 20px 20px; */
+}
+
+button {
+  background-color: rgb(78, 178, 240);
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(78, 178, 240);
+  transform: scale(1.2);
+}
+
+.button-issue-pg {
+  background-color: rgb(78, 178, 240);
+  border-radius: 8px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  margin-left: 9px;
+}
+
+input.button-issue-pg:hover {
+  background-color: white;
+  color: rgb(78, 178, 240);
+  transform: scale(1.2);
+}
+
+.form-text {
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  text-align: center;
 }

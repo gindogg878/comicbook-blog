@@ -1,3 +1,5 @@
+import "../style.css";
+
 export default function BlogEntry(props) {
   return (
     <div>

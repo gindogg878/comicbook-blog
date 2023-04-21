@@ -13,8 +13,8 @@ export default function Blog({ commentState, dispatch }) {
           <div className="blogpost">
             <h1>{entry.title}</h1>
             <img src={entry.img} alt="battleSceneImg" />
+            <h4>Posted on: {entry.date}</h4>
             <p>{entry.text}</p>
-            <p>{entry.date}</p>
             <BlogEntry commentState={commentState} dispatch={dispatch} />
           </div>
         );

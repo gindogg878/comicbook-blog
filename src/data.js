@@ -2,6 +2,7 @@ const entries = [
   {
     title: "The X-tinction Agenda",
     img: "https://i.ytimg.com/vi/e2WV12Ocvek/maxresdefault.jpg",
+    blogtext: "One of the first X-men Crossovers that an impact on me!!!",
     text: `"X-Tinction Agenda" is a 1990 crossover comic book storyline published by Marvel Comics that ran through Uncanny X-Men and its spin-off titles, X-Factor and New Mutants. "X-Tinction Agenda" not only reunited the X-Men after a prolonged period in which the team had been scattered around the globe (following the events of Uncanny X-Men #246-251), but featured the combined might of the three mutant teams for the first time, in their fight against the mutant-exploiting Genoshan government.`,
     date: "01/01/2023",
   },
@@ -16,7 +17,7 @@ const entries = [
   },
 
   {
-    title: "Lorem lorem lorem",
+    title: "Secret Wars 1985",
     img:
       "https://i0.wp.com/methodsunsound.com/wp-content/uploads/2015/05/secret-wars-II.jpg?ssl=1",
     text:

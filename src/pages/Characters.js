@@ -33,7 +33,7 @@ export default function Characters() {
   }, []);
 
   return (
-    <div>
+    <div className="char-pg">
       <h1>Search Characters</h1>
       <Form datasearch={getChar} />
       <CharDisplay charSearch={characters} />

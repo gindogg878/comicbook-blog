@@ -1,7 +1,9 @@
+import "../style.css";
+
 export default function DataDisplay({ issue }) {
   const loaded = () => {
     return (
-      <>
+      <div className="issues">
         {issue.map((issue) => {
           return (
             <div>
@@ -10,11 +12,10 @@ export default function DataDisplay({ issue }) {
                 alt="hero"
               />
               <h1>{issue.title}</h1>
-              <p>{issue.urls.url}</p>
             </div>
           );
         })}
-      </>
+      </div>
     );
   };
   const loading = () => {

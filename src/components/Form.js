@@ -28,8 +28,9 @@ export default function Form(props) {
           onChange={handleChange}
           value={formData.searchTerm}
           name="searchTerm"
+          className="form-text"
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" className="button-issue-pg" />
       </form>
     </div>
   );

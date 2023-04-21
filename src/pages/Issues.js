@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Form from "../components/Form";
 import DataDisplay from "../components/DataDisplay";
+import "../style.css";
 
 export default function Issues() {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -33,7 +34,7 @@ export default function Issues() {
   }, []);
 
   return (
-    <div>
+    <div className="issue-pg">
       <h1>Search Issues</h1>
       <Form datasearch={getIssue} />
       <DataDisplay issue={issue} />
