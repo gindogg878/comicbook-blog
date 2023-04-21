@@ -16,6 +16,9 @@ If you desire to fork and clone this project just use the gitHub instructions. Y
 
 Here is a link to my live webpage
 [Github pages live link](https://gindogg878.github.io/comicbook-blog/)
+
+#######
+
 [Netlify link](https://ginoscomicbookblog.netlify.app/)
 
 ## Unresolved Issues
