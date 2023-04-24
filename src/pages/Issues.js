@@ -15,7 +15,7 @@ export default function Issues() {
         return;
       }
       const response = await fetch(
-        `http://gateway.marvel.com/v1/public/comics?title=${searchTerm}&ts=1&apikey=${apiKey}&hash=${hashKey}`
+        `https://gateway.marvel.com/v1/public/comics?title=${searchTerm}&ts=1&apikey=${apiKey}&hash=${hashKey}`
       );
 
       //parse json response into js obj

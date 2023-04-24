@@ -14,7 +14,7 @@ export default function Characters() {
         return;
       }
       const response = await fetch(
-        `http://gateway.marvel.com/v1/public/characters?name=${searchTerm}&ts=1&apikey=${apiKey}&hash=${hashKey}`
+        `https://gateway.marvel.com/v1/public/characters?name=${searchTerm}&ts=1&apikey=${apiKey}&hash=${hashKey}`
       );
 
       //parse json response into js obj
