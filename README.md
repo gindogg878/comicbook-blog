@@ -15,8 +15,6 @@ I wanted to stick with the topics that I felt most comfortable with (Hooks). I s
 If you desire to fork and clone this project just use the gitHub instructions. You will need to have your own Marvel developer api key as well as a hash key that you can create yourself. Marvel does not provide this hash key. The only dependecies I added was the react-router-dom to use the Routes and Link hooks.
 
 Here is a link to my live webpage
-[Github pages live link](https://gindogg878.github.io/comicbook-blog/)
-
 #######
 
 [Netlify link](https://ginoscomicbookblog.netlify.app/)
